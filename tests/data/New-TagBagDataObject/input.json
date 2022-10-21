@@ -1,0 +1,428 @@
+[
+  {
+    "moduleType": "lookups",
+    "moduleName": "apimsubscription",
+    "version": "2.0.3",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "appserviceplan",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "automationaccount",
+    "version": "2.1.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "certificatekeyvault",
+    "version": "3.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "costcenter",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "deploymentkeyvault",
+    "version": "3.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "firewallpolicy",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "funcappplan",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "names",
+    "version": "4.0.1",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "publicipaddress",
+    "version": "3.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "sharednames",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "subnet",
+    "version": "2.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "userassignedidentity",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "lookups",
+    "moduleName": "vmimage",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "appgatewayakswaf",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "applicationgatewaymigration",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "automationaccount",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "nservicebus",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "recoveryvault",
+    "version": "1.0.1",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "staticcdn",
+    "version": "2.1.1",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "staticweb",
+    "version": "2.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "trafficmanagermigration",
+    "version": "1.0.1",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "recipes",
+    "moduleName": "vnet",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "appgatewaywafpolicy",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "appinsights",
+    "version": "1.0.1",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "appservice",
+    "version": "2.1.2",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "appserviceplanlinux",
+    "version": "2.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "appserviceplanwindows",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "automationaccount",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "availabilityset",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "budget",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "cdnendpoint",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "cdnprofile",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "cdnwafpolicy",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "containerregistry",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "cosmosdbaccount",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "databricks",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "datafactory",
+    "version": "1.0.2",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "eventgridsubscription",
+    "version": "1.0.1",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "eventgridtopic",
+    "version": "1.0.1",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "eventhub",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "functionapp",
+    "version": "4.0.4",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "keyvault",
+    "version": "2.1.1",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "keyvaultcheckscript",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "loadbalancerinternal",
+    "version": "2.0.3",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "networksecuritygroup",
+    "version": "2.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "networkwatcher",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "nsgflowlog",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "policyassignment",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "policydefinition",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "policyexemption",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "policysetdefinition",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "privateendpointlink",
+    "version": "2.0.3",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "publicip",
+    "version": "3.0.2",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "rediscache",
+    "version": "2.1.2",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "rediscachekvload",
+    "version": "2.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "resourcegroup",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "resourceroleassignment",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "roledefinition",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "routetable",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "servicebus",
+    "version": "3.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "servicebuskvload",
+    "version": "3.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "sqlserver",
+    "version": "1.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "sqlserverdatabase",
+    "version": "2.0.3",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "staticwebapp",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "storageaccount",
+    "version": "3.0.1",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "storageaccountkvload",
+    "version": "3.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "trafficmanagerprofile",
+    "version": "3.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "userassignedidentity",
+    "version": "1.0.0",
+    "provisioningState": "Failed"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "virtualmachine",
+    "version": "4.0.0",
+    "provisioningState": "Succeeded"
+  },
+  {
+    "moduleType": "resources",
+    "moduleName": "virtualnetwork",
+    "version": "2.0.0",
+    "provisioningState": "Failed"
+  }
+]
