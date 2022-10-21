@@ -28,65 +28,69 @@ Describe 'function New-TagBagObject' -Tag Build {
     Context 'Functionality' {
         #TODO: Sample input and ouput data, ideal. Also inputs/outputs that fail.
         # params: Schema, [object[]]InputObject
-        # $tagdatain = [PSCustomObject]@{
-        #     module            = 'appinsights'
-        #     version           = '1.0.1'
-        #     provisioningState = 'success'
-        # }
-
-
-        it "creates a schema tag object called aztagdataschema" {
-          $result = New-TagBagObject $TestInputObject
-          $result.Keys | Should -Contain 'TagBagSchema'
+        BeforeAll {
+            # TODO More input tests
+            # $tagdatain = @([PSCustomObject]@{
+            #     module            = 'appinsights'
+            #     version           = '1.0.1'
+            #     provisioningState = 'success'
+            # }
+            # [PSCustomObject]@{
+            #     module            = 'appinsights'
+            #     version           = '1.0.1'
+            #     provisioningState = 'success'
+            # }
+            # [PSCustomObject]@{
+            #     module            = 'appinsights'
+            #     version           = '1.0.1'
+            #     provisioningState = 'success'
+            #     asdf               = 'fuck'
+            # })
+            # $result = New-TagBagObject $tagdatain
+            $result = New-TagBagObject $TestInputObject
         }
 
-        it "creates a schema tag object that follows the schema defined in aztagdataschema" -skip {
-
+        it "returns something" {
+            $result | Should -Not -BeNullOrEmpty
         }
 
-        # Microsoft.Azure.Management.ResourceManager.Models::Tags(new)
-        # https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.models.tags?view=azure-dotnet
-
-
-
-        it "throws if it returns nothing" -skip {
-
+        it "returns a hashtable" {
+            $result | Should -BeOfType [hashtable]
         }
 
-        it "throws if key is longer than 512" -skip {
-
+        it "creates a schema tag object called TagBagSchema" {
+            $result.Keys | Should -Contain 'TagBagSchema'
         }
 
-        it "throws if value is longer than 256" -skip {
-
+        it "creates a schema tag object with a json string value" {
+            $result.TagBagSchema | Should -Not -BeNullOrEmpty
+            { $script:convertedTagBagSchema = $result.TagBagSchema | ConvertFrom-Json } | Should -Not -Throw
+            $script:convertedTagBagSchema.Count | Should -BeGreaterThan 0
+        }
+        
+        it "all keys are less than 512" {
+            $result.keys | Foreach-Object {
+                $_.Length | Should -BeLessOrEqual 512
+            }
+        }
+        
+        it "all values are less than 256" {
+            $result.values | Foreach-Object {
+                $_.Length | Should -BeLessOrEqual 256
+            }
+        }
+        
+        it "all keys can be decoded to json" {
+            $result.keys | Foreach-Object {
+                { $_ | ConvertTo-Json } | Should -Not -Throw
+            }
         }
 
-        it "can be decoded to json in both key and value" -skip {
-
+        it "all values can be decoded to json" {
+            $result.values | Foreach-Object {
+                { $_ | ConvertTo-Json } | Should -Not -Throw
+            }
         }
-
-        it "returns a hashtable" -skip {}
-
-        # in ReadMeBicepDeploy.tests.ps1, inputObject comes from $deploymentOutputHash
-        # which is the return obj from Azure after a bicep deployment from BicepFlex
-
-        # which module changed, version, whether last deploy succeeded or failed
-
-        # @{
-        #     module            = $modName
-        #     version           = $version
-        #     ProvisioningState = "succeeded|failed"
-        # }
-
-        # scripts checks tags to determine whether to run the deployment test again
-        # if the provisioningState for the version is succeeded, skip
-        # otherwise, run
-
-
-        # sample input
-
-        # sample output
-
     }
 }
 
