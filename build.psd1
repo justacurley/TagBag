@@ -1,0 +1,3 @@
+@{
+    CopyPaths = "data"
+}
